@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif; /* Adds a funny comic-style font */
+}
+
+/* Funny background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Container */
+.holder {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+}
+
+/* Input fields */
+.inputbox {
+    position: relative;
+    margin: 15px 0;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.inputbox input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.inputbox input:focus {
+    border-color: #ff6347; /* Funny red color */
+}
+
+/* Submit button */
+#funnyButton {
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#funnyButton:hover {
+    transform: scale(1.1) rotate(2deg);
+    background: #ffa07a;
+}
+
+/* Funny Message */
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Running away animation */
+@keyframes runAway {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(20px, -20px); }
+    100% { transform: translate(0, 0); }
+}
